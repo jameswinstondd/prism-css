@@ -1,0 +1,79 @@
+.dd-button-group {
+    width: 100%;
+    display: flex;
+    align-items: left;
+  }
+  
+.dd-button-group .dd-button {
+  margin-right: 12px;
+  width: auto;
+  display: inline-flex;
+}
+
+.dd-button {
+  border-radius: 1000px;
+  text-decoration: none;
+  display: flex;
+  width: 100%;
+  padding: 0px 12px;
+  min-height: 32px;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.15s ease-in-out 0s,
+    box-shadow 0.15s ease-in-out 0s;
+  user-select: none;
+  text-decoration: none;
+  text-align: center;
+  box-shadow: transparent 0px 0px 0px 1px inset;
+  color: var(--colorButtonPrimaryForeground);
+  background-color: var(--colorSystemRed60);
+  white-space: nowrap;
+  font-size: 14px;
+  font-family: var(--fontFamily);
+  font-weight: 700;
+  line-height: 16px;
+}
+
+.dd-button:hover {
+  background-color: var(--colorSystemRed70);
+  box-shadow: transparent 0px 0px 0px 1px inset;
+  text-decoration: none !important;
+}
+
+.dd-button.is-inline {
+  width: auto;
+  display: inline-flex;
+}
+
+.dd-button svg {
+  margin-top: 1px;
+  width: 14px;
+  height: 14px;
+}
+
+.dd-button.dd-button-has-icon-start svg {
+  margin-right: 4px;
+}
+
+.dd-button.dd-button-has-icon-end svg {
+  margin-left: 4px;
+}
+
+.dd-button.dd-button-is-tertiary {
+  color: var(--colorButtonTertiaryForeground);    
+  background-color: var(--colorButtonTertiaryBackgroundDefault);
+  box-shadow: #e7e7e7 0px 0px 0px 2px inset;
+}
+
+.dd-button.dd-button-is-tertiary:hover {
+  background-color: var(--colorButtonTertiaryBackgroundHovered);
+  box-shadow: rgb(214, 214, 214) 0px 0px 0px 1px inset;
+}
+
+.dd-button:focus {
+  box-shadow: var(--colorSystemBlue60) 0px 0px 0px 3px,
+    rgb(231, 231, 231) 0px 0px 0px 1px inset;
+  outline: none;
+}
